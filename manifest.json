@@ -1,0 +1,38 @@
+// {
+// 	"name": "Sample",
+// 	"manifest_version": 3,
+// 	"version": "0.1",
+// 	"permissions": ["activeTab","scripting"],
+// 	"background": {
+// 		"service_worker": "content.js"
+// 	},
+// 	"action": {}
+// }
+
+// {
+// 	"name": "Sample",
+// 	"version": "1.0.0",
+// 	"manifest_version": 2,
+// 	"description": "Sample Chrome Extension",
+// 	"content_scripts": [{
+// 	//   "matches": ["https://{subdomain}.cybozu.com/k/{AppID}/*"],
+// 	  "matches": ["http://*/*","https://*/*"],
+// 	  "js": [
+// 		"content.js"
+// 	  ]
+// 	}]
+//   }
+
+{
+	"manifest_version": 2,
+	"name": "sample002",
+	"version": "1.0",
+	"description": "",
+	"content_scripts": [{
+		// "matches": ["https://www.google.com/"],
+        "matches": ["http://*/*","https://*/*"],
+		"js": [
+			"content.js"
+		]
+	}]
+}
